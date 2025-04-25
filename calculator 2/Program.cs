@@ -4,12 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace calculator
+namespace Calculator
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("To perform simple calculator operations");
+            Console.WriteLine();
             Console.WriteLine("Enter a value:");
             double n1 = Convert.ToDouble(Console.ReadLine());
             bool op = true;
@@ -25,7 +27,7 @@ namespace calculator
                     op = false;
                     break;
                 }
-                Console.WriteLine("Enter the next number:");
+                Console.WriteLine("Enter the next value: ");
                 double n2=Convert.ToDouble(Console.ReadLine());
                 
                 if (o == '+')
